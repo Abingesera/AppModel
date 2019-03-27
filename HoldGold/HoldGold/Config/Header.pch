@@ -1,0 +1,125 @@
+//
+//  Header.pch
+//  HoldGold
+//
+//  Created by 掌金 on 2019/3/18.
+//  Copyright © 2019年 掌金. All rights reserved.
+//
+
+#ifndef Header_pch
+#define Header_pch
+
+#pragma mark 系统框架
+#import <UserNotifications/UserNotifications.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#pragma mark 基础配置
+#pragma mark 应用总体配置文件
+#import "Config.h"
+#pragma mark 应用缓存配置文件
+#import "Cache.h"
+#pragma mark 应用内枚举配置文件
+#import "Enum.h"
+#pragma mark 快速创建单例
+#import "Singleton.h"
+#pragma mark 网络请求配置
+#import "Api.h"
+#pragma mark 通知事件配置
+#import "Noti.h"
+
+#pragma mark 第三方库
+#pragma mark JSONKit
+#import "JSONKit.h"
+#pragma mark SDWebImage
+#import <SDWebImageManager.h>
+#import <UIImageView+WebCache.h>
+#pragma mark AFNetworking
+#import <AFNetworking.h>
+#pragma mark 友盟统计，分享
+#import <UMCommon/UMCommon.h>
+#import <UMAnalytics/MobClick.h>
+#import <UMShare/UMShare.h>
+#import <UShareUI/UShareUI.h>
+#pragma mark 个推
+#import <GTSDK/GeTuiSdk.h>
+#pragma mark 极光
+#import <JPUSHService.h>
+#pragma mark MJExtension
+#import <MJExtension/MJExtension.h>
+#import <NSString+MJExtension.h>
+#pragma mark 对象存储
+#import <QCloudCore/QCloudCore.h>
+#import <QCloudCOSXML/QCloudCOSXML.h>
+#pragma mark MBProgressHUD
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "MBProgressHUD+Common.h"//toast提示
+#pragma mark MJRefresh
+#import <MJRefresh/MJRefresh.h>
+#import <MJRefresh/MJRefreshAutoStateFooter.h>//下拉刷新
+
+#pragma mark 公共单例
+#import "PublicManager.h"
+#pragma mark 公共方法
+#import "PublicTool.h"
+#pragma mark 字体
+#import "FontTool.h"
+#pragma mark 无网状态
+#import "NoneNetWorkingView.h"
+
+#pragma mark 网络请求及参数处理工具封装
+#import "NetParam.h"
+#import "NetRequest.h"
+
+#pragma mark Categorys
+#import "AppDelegate+Config.h"//配置友盟，个推等
+#import "NSString+Json.h"//string转json
+#import "NSString+Common.h"
+#import "UIDevice+UniqueId.h"//获取设备id使用
+#import "NSArray+Common.h"//array转json
+#import "NSDictionary+Common.h"//dict转json
+#import "NSDate+Formatter.h"//处理日期相关的
+#import "NSObject+EncodeDecode.h"
+#import "NSObjectAutoEncodeDecode.h"
+#import "UIView+Size.h"
+#import "UINavigationBar+WRAddition.h"
+#import "UIViewController+BackButtonHandler.h"
+#import "UINavigationController+Autorotate.h"
+
+#pragma mark 其他第三方工具
+#pragma mark 加解密工具
+#import "XLEncrytHelper.h"
+#pragma mark 获取UUID
+#import "MyKeyChainManager.h"
+#import "MyUUIDManager.h"
+#import "ActionSheetView.h"
+#import "XLVersionCheck.h"
+#import "CJXPermissionsManage.h"
+
+#pragma mark 缓存
+#import "XLArchiverHelper.h"
+
+#pragma mark WCDB数据库协议
+#import "DBProtocol.h"
+
+#pragma mark 基类
+#import "BaseViewController.h"
+#import "BaseView.h"
+#import "BaseButton.h"
+
+#pragma mark loading页
+#import "LoadingController.h"
+#pragma mark TabBar
+#import "TabBarButton.h"
+#import "TabBar.h"
+#import "TabBarController.h"
+
+#import "HomePageController.h"
+#import "MarketController.h"
+#import "TradeController.h"
+#import "GroupController.h"
+#import "MineController.h"
+
+#import "SystemApi.h"
+
+#endif /* Header_pch */
